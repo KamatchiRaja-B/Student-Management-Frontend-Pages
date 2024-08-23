@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Student-Management-Frontend-Pages/styles.css">
+    <title>Delete Student</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="registerPage.html">Register New Student</a>
+        <a href="fetchAllPage.html">View All Students</a>
+        <a href="searchPage.html">Search Student</a>
+        <a href="updatePage.html">Update Student</a>
+        <a href="deletePage.html" class="active">Delete Student</a>
+    </div>
+    <div class="container">
+        <div class="form-card">
+            <h1>Delete Student</h1>
+            <p class="warning">Warning: This action cannot be undone. Please be certain before proceeding.</p>
+            <form>
+                <div class="form-group">
+                    <label for="university-id">University ID</label>
+                    <input type="text" id="university-id" name="university-id" required>
+                </div>
+                <button type="submit" class="delete-button">Delete Student</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

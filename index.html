@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Student-Management-Frontend-Pages/styles.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="registerPage.html">Register New Student</a>
+        <a href="fetchAllPage.html">View All Students</a>
+        <a href="searchPage.html">Search Student</a>
+        <a href="updatePage.html">Update Student</a>
+        <a href="deletePage.html">Delete Student</a>
+    </div>
+    <div class="card">
+        <h1>Welcome to Student Management Dashboard</h1>
+        <div class="card-content">
+            <div class="card-item">
+                <button onclick="location.href='registerPage.html'">Register New Student</button>
+                <p>Add a new student to the database.</p>
+            </div>
+            <div class="card-item">
+                <button onclick="location.href='fetchAllPage.html'">View All Existing Students</button>
+                <p>View the list of all students.</p>
+            </div>
+            <div class="card-item">
+                <button onclick="location.href='searchPage.html'">Search Student</button>
+                <p>Find a specific student details by ID.</p>
+            </div>
+            <div class="card-item">
+                <button onclick="location.href='updatePage.html'">Update Existing Student</button>
+                <p>Modify the details of an existing student.</p>
+            </div>
+            <div class="card-item">
+                <button onclick="location.href='deletePage.html'">Delete Student</button>
+                <p>Remove a student from the database.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/Student-Management-Frontend-Pages/styles.css">
+        <title>Register New Student</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="registerPage.html" class="active">Register New Student</a>
+            <a href="fetchAllPage.html">View All Students</a>
+            <a href="searchPage.html">Search Student</a>
+            <a href="updatePage.html">Update Student</a>
+            <a href="deletePage.html">Delete Student</a>
+        </div>
+
+        <div class="container">
+            <div class="form-card">
+                <h1>Register New Student</h1>
+
+                <form action="RegisterServlet" method="post">
+                    <div class="form-group">
+                        <label for="university-id">University ID</label>
+                        <input type="text" id="university-id" name="univId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Branch</label>
+                        <input type="text" id="branch" name="branch" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <button type="submit">Add Student</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="alert success">
+            &#x2714; Student registered successfully!
+        </div>
+        <div class="alert error">
+            &#x274C; University ID already exists. Please use a different ID.
+        </div>
+        <div class="alert error">
+            &#x274C; An error occurred during registration. Please try again.
+        </div>
+    </body>
+
+    </html>
